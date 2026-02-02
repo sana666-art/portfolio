@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 240 10% 3.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 240 10% 3.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 10% 3.9%;
+    --primary: 207 84% 57%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 240 4.8% 95.9%;
+    --secondary-foreground: 240 5.9% 10%;
+    --muted: 240 4.8% 95.9%;
+    --muted-foreground: 240 3.8% 46.1%;
+    --accent: 240 4.8% 95.9%;
+    --accent-foreground: 240 5.9% 10%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 220 13% 91%;
+    --input: 240 5.9% 90%;
+    --ring: 207 84% 57%;
+    --radius: 0.625rem;
+    
+    --ease-dramatic: cubic-bezier(0.87, 0, 0.13, 1);
+    --ease-smooth: cubic-bezier(0.4, 0, 0.2, 1);
+    --ease-bounce: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    --ease-expo-out: cubic-bezier(0.16, 1, 0.3, 1);
+    --ease-expo-in: cubic-bezier(0.7, 0, 0.84, 0);
+    --ease-elastic: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    --ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply bg-white text-dark font-montserrat antialiased;
+    overflow-x: hidden;
+  }
+}
+
+@layer components {
+  .container-custom {
+    @apply max-w-[1140px] mx-auto px-4 sm:px-6 lg:px-8;
+  }
+  
+  .section-padding {
+    @apply py-20 md:py-28;
+  }
+  
+  .gradient-text {
+    @apply bg-gradient-to-r from-primary to-indigo-500 bg-clip-text text-transparent;
+  }
+  
+  .gradient-bg {
+    @apply bg-gradient-to-r from-primary to-indigo-500;
+  }
+  
+  .glass-effect {
+    @apply backdrop-blur-xl bg-white/90;
+  }
+  
+  .card-3d {
+    transform-style: preserve-3d;
+    perspective: 1000px;
+  }
+  
+  .hover-lift {
+    @apply transition-all duration-300 ease-out;
+  }
+  
+  .hover-lift:hover {
+    @apply -translate-y-2 shadow-card-hover;
+  }
+  
+  .btn-primary {
+    @apply px-6 py-3 bg-primary text-white font-semibold rounded-lg transition-all duration-300;
+    @apply hover:bg-primary-dark hover:shadow-glow hover:-translate-y-0.5;
+  }
+  
+  .btn-secondary {
+    @apply px-6 py-3 border-2 border-primary text-primary font-semibold rounded-lg transition-all duration-300;
+    @apply hover:bg-primary hover:text-white hover:-translate-y-0.5;
+  }
+  
+  .section-title {
+    @apply text-3xl md:text-4xl lg:text-5xl font-bold text-dark mb-4;
+  }
+  
+  .section-subtitle {
+    @apply text-text-secondary text-lg md:text-xl max-w-2xl mx-auto;
+  }
+  
+  .skill-bar {
+    @apply h-2 bg-light-gray rounded-full overflow-hidden;
+  }
+  
+  .skill-bar-fill {
+    @apply h-full gradient-bg rounded-full transition-all duration-1000 ease-out;
+    background-size: 200% 100%;
+    animation: gradient-shift 2s ease-in-out infinite;
+  }
+  
+  .timeline-line {
+    @apply absolute left-1/2 transform -translate-x-1/2 w-0.5 h-full bg-border-light;
+  }
+  
+  .timeline-node {
+    @apply absolute left-1/2 transform -translate-x-1/2 w-4 h-4 rounded-full bg-primary border-4 border-white shadow-md;
+  }
+  
+  .floating-shape {
+    @apply absolute rounded-full opacity-20 pointer-events-none;
+  }
+  
+  .nav-link {
+    @apply relative text-dark font-medium transition-colors duration-300 hover:text-primary;
+  }
+  
+  .nav-link::after {
+    content: '';
+    @apply absolute bottom-0 left-1/2 w-0 h-0.5 bg-primary transition-all duration-300;
+    transform: translateX(-50%);
+  }
+  
+  .nav-link:hover::after {
+    @apply w-full;
+  }
+}
+
+@layer utilities {
+  .animate-delay-100 {
+    animation-delay: 100ms;
+  }
+  .animate-delay-200 {
+    animation-delay: 200ms;
+  }
+  .animate-delay-300 {
+    animation-delay: 300ms;
+  }
+  .animate-delay-400 {
+    animation-delay: 400ms;
+  }
+  .animate-delay-500 {
+    animation-delay: 500ms;
+  }
+  .animate-delay-600 {
+    animation-delay: 600ms;
+  }
+  .animate-delay-700 {
+    animation-delay: 700ms;
+  }
+  .animate-delay-800 {
+    animation-delay: 800ms;
+  }
+  
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #3898ec;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #2a7bc8;
+}
+
+/* Selection styling */
+::selection {
+  background: rgba(56, 152, 236, 0.3);
+  color: #1a1b1f;
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  
+  html {
+    scroll-behavior: auto;
+  }
+}
