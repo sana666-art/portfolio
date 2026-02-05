@@ -151,8 +151,8 @@ const About = () => {
               style={{ transitionDelay: '800ms' }}
             >
               <a
-                href="/resume.pdf"
-                download
+                href="/images/resume.pdf"
+                download="resume.pdf"
                 className="btn-primary inline-flex items-center gap-2"
               >
                 Download Resume

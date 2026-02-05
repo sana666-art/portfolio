@@ -23,6 +23,23 @@ const Hero = () => {
     }
   };
 
+  const handleDownloadResume = async () => {
+    try {
+      const response = await fetch('/images/resume.pdf');
+      const blob = await response.blob();
+      const url = window.URL.createObjectURL(new Blob([blob], { type: 'application/pdf' }));
+      const link = document.createElement('a');
+      link.href = url;
+      link.download = 'resume.pdf';
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+      window.URL.revokeObjectURL(url);
+    } catch (error) {
+      console.error('Error downloading resume:', error);
+    }
+  };
+
   return (
     <section
       id="home"
@@ -86,13 +103,12 @@ const Hero = () => {
                 View My Projects
                 <ArrowRight className="w-4 h-4 btn-arrow" />
               </button>
-              <a
-                href="/resume.pdf"
-                download
+              <button
+                onClick={handleDownloadResume}
                 className="btn-secondary flex items-center justify-center"
               >
                 Download Resume
-              </a>
+              </button>
             </div>
 
             {/* Stats */}

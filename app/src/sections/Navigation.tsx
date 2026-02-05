@@ -85,8 +85,8 @@ const Navigation = ({ scrollY }: NavigationProps) => {
           {/* CTA Button */}
           <div className="hidden lg:block">
             <a
-              href="/resume.pdf"
-              download
+              href="/images/resume.pdf"
+              download="resume.pdf"
               className="btn-primary flex items-center gap-2 text-sm"
             >
               <Download className="w-4 h-4" />
