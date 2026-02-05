@@ -24,7 +24,7 @@ export default async function handler(req, res) {
 
   try {
     // SMTP transporter (recommended config)
-    const transporter = nodemailer.createTransporter({
+    const transporter = nodemailer.createTransport({
       host: process.env.SMTP_HOST || "smtp.gmail.com",
       port: 587,
       secure: false,
