@@ -98,9 +98,9 @@ const Contact = () => {
   ];
 
   const socialLinks = [
-    { icon: Linkedin, href: 'https://linkedin.com', label: 'LinkedIn', color: 'hover:bg-blue-600' },
-    { icon: Github, href: 'https://github.com', label: 'GitHub', color: 'hover:bg-gray-800' },
-    { icon: Twitter, href: 'https://twitter.com', label: 'Twitter', color: 'hover:bg-blue-400' },
+    { icon: Linkedin, href: 'https://www.linkedin.com/in/sana-khalid-memon-84980b248/', label: 'LinkedIn', color: 'hover:bg-blue-600' },
+    { icon: Github, href: 'https://github.com/sana666-art', label: 'GitHub', color: 'hover:bg-gray-800' },
+    { icon: Twitter, href: 'https://x.com/SanaKhalid81021', label: 'Twitter', color: 'hover:bg-blue-400' },
   ];
 
   return (

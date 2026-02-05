@@ -1,4 +1,4 @@
-# Sana Khalid - Portfolio
+# Sana Khalid Memon - Portfolio
 
 [![React](https://img.shields.io/badge/React-19.2.0-blue.svg)](https://reactjs.org/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.9.3-blue.svg)](https://www.typescriptlang.org/)
@@ -54,7 +54,7 @@ A modern, responsive personal portfolio website showcasing my work as a Machine 
 1. **Clone the repository**
 
    ```bash
-   git clone https://github.com/your-username/portfolio.git
+   git clone https://github.com/sana666-art/portfolio.git
    cd portfolio
    ```
 
@@ -144,12 +144,12 @@ portfolio/
 
 ## 📧 Contact
 
-Sana Khalid - Machine Learning Engineer & Full-Stack Developer
+Sana Khalid Memon - Machine Learning Engineer & Full-Stack Developer
 
 - **Email**: khalidsana666@gmail.com
-- **LinkedIn**: [linkedin.com/in/sana-khalid](https://linkedin.com)
-- **GitHub**: [github.com/sana-khalid](https://github.com)
-- **Twitter**: [twitter.com/sana-khalid](https://twitter.com)
+- **LinkedIn**: [linkedin.com/in/sana-khalid-memon](https://www.linkedin.com/in/sana-khalid-memon-84980b248/)
+- **GitHub**: [github.com/sana666-art](https://github.com/sana666-art)
+- **Twitter**: [x.com/SanaKhalid81021](https://x.com/SanaKhalid81021)
 
 ## 📄 License
 

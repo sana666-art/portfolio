@@ -10,9 +10,9 @@ const Hero = () => {
   }, []);
 
   const socialLinks = [
-    { icon: Linkedin, href: 'https://linkedin.com', label: 'LinkedIn' },
-    { icon: Github, href: 'https://github.com', label: 'GitHub' },
-    { icon: Twitter, href: 'https://twitter.com', label: 'Twitter' },
+    { icon: Linkedin, href: 'https://www.linkedin.com/in/sana-khalid-memon-84980b248/', label: 'LinkedIn' },
+    { icon: Github, href: 'https://github.com/sana666-art', label: 'GitHub' },
+    { icon: Twitter, href: 'https://x.com/SanaKhalid81021', label: 'Twitter' },
     { icon: Mail, href: 'mailto:khalidsana666@gmail.com', label: 'Email' },
   ];
 
