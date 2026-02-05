@@ -23,6 +23,9 @@ export default async function handler(req, res) {
   }
 
   try {
+    console.log('EMAIL_USER:', process.env.EMAIL_USER);
+    console.log('RECIPIENT_EMAIL:', process.env.RECIPIENT_EMAIL);
+
     // SMTP transporter (recommended config)
     const transporter = nodemailer.createTransport({
       host: process.env.SMTP_HOST || "smtp.gmail.com",
@@ -33,9 +36,6 @@ export default async function handler(req, res) {
         pass: process.env.EMAIL_PASS, // App password
       },
     });
-
-    // Verify ONCE at startup (but in serverless, this runs per request)
-    await transporter.verify();
 
     const mailOptions = {
       from: `"Portfolio Contact" <${process.env.EMAIL_USER}>`,
