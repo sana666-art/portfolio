@@ -56,7 +56,7 @@ const Projects = () => {
         'Collection of interactive web applications including Money Exchange API, Tic-Tac-Toe Game, Rock-Paper-Scissors AI Game, and utility apps.',
       image: '/images/project-javascript.jpg',
       techStack: ['JavaScript', 'HTML', 'CSS', 'REST APIs'],
-      githubLink: '#',
+      githubLink: 'https://github.com/sana666-art/JavaScript-Projects',
       category: 'Web Development',
     },
     {
@@ -66,7 +66,7 @@ const Projects = () => {
         'Full-featured CRUD application built with PHP Blade template, featuring user management, data operations, and responsive design.',
       image: '/images/project-crud.jpg',
       techStack: ['PHP', 'MySQL', 'CSS', 'XAMPP'],
-      githubLink: '#',
+      githubLink: 'https://github.com/sana666-art?tab=repositories',
       category: 'Web Development',
     },
     {
@@ -86,7 +86,7 @@ const Projects = () => {
         'Developed and customized Odoo modules for business automation, including backend logic development and workflow automation.',
       image: '/images/project-odoo.jpg',
       techStack: ['Python', 'Odoo', 'XML', 'PostgreSQL', 'QWeb'],
-      githubLink: '#',
+      githubLink: 'https://github.com/sana666-art/odooo_learning',
       category: 'ERP Development',
     },
   ];
@@ -325,7 +325,7 @@ const Projects = () => {
           style={{ transitionDelay: '800ms' }}
         >
           <a
-            href="https://github.com"
+            href="https://github.com/sana666-art?tab=repositories"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 bg-white/10 text-white px-8 py-4 rounded-xl font-semibold hover:bg-white/20 transition-all duration-300 border border-white/10"
